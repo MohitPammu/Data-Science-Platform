@@ -1,0 +1,28 @@
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    curl \
+    sqlite3 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python ML stack
+COPY requirements-base.txt .
+RUN pip install --no-cache-dir -r requirements-base.txt
+
+# Create non-root user and set permissions
+RUN useradd --create-home --shell /bin/bash mluser \
+    && mkdir -p /tmp/mlruns /tmp/artifacts \
+    && chmod -R 777 /tmp \
+    && chown -R mluser:mluser /app \
+    && touch /tmp/mlruns/mlruns.db \
+    && chmod 666 /tmp/mlruns/mlruns.db
+
+USER mluser
+
+EXPOSE 8000

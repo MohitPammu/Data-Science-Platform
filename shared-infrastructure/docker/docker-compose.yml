@@ -1,0 +1,25 @@
+services:
+  mlflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml-base
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./mlflow-data:/tmp/mlruns
+    working_dir: /tmp
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri file:///tmp/mlruns --default-artifact-root /tmp/artifacts
+
+  healthcare-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml-base
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./healthcare-intelligence:/app
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5001
+    depends_on:
+      - mlflow
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
