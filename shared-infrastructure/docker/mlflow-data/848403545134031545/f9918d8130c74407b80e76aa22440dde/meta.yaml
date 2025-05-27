@@ -1,0 +1,15 @@
+artifact_uri: /tmp/artifacts/848403545134031545/f9918d8130c74407b80e76aa22440dde/artifacts
+end_time: 1748382375309
+entry_point_name: ''
+experiment_id: '848403545134031545'
+lifecycle_stage: active
+run_id: f9918d8130c74407b80e76aa22440dde
+run_name: fraud_indicators_analysis
+run_uuid: f9918d8130c74407b80e76aa22440dde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748382375226
+status: 3
+tags: []
+user_id: mohitpammu

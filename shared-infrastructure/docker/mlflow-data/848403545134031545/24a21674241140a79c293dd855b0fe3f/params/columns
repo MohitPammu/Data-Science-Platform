@@ -1,0 +1,1 @@
+['provider_id', 'provider_name', 'state', 'specialty', 'total_claims', 'total_payment', 'avg_claim_amount', 'claim_count_rank']

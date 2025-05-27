@@ -1,0 +1,15 @@
+artifact_uri: /tmp/artifacts/848403545134031545/4e6f3c4ec99a4360b0ba46f0e505763a/artifacts
+end_time: 1748381946175
+entry_point_name: ''
+experiment_id: '848403545134031545'
+lifecycle_stage: active
+run_id: 4e6f3c4ec99a4360b0ba46f0e505763a
+run_name: data_quality_medicare_claims
+run_uuid: 4e6f3c4ec99a4360b0ba46f0e505763a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748381945974
+status: 3
+tags: []
+user_id: mohitpammu
