@@ -1,7 +1,16 @@
 # Data Science Platform
+
+![GitHub Last Commit](https://img.shields.io/github/last-commit/MohitPammu/Data-Science-Platform)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/MohitPammu/Data-Science-Platform)
+![GitHub Stars](https://img.shields.io/github/stars/MohitPammu/Data-Science-Platform)
+![GitHub Forks](https://img.shields.io/github/forks/MohitPammu/Data-Science-Platform)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Integrated Healthcare, FinTech & AI Analytics Portfolio
 
 Production-ready data science platform demonstrating systematic approach to building integrated ML solutions across healthcare, finance, and AI domains with shared infrastructure and professional deployment practices.
+
+---
 
 ## Portfolio Architecture
 
@@ -26,6 +35,8 @@ Production-ready data science platform demonstrating systematic approach to buil
 - **Technology:** Advanced NLP with ensemble learning and model interpretability
 - **Enterprise Ready:** Scalable API architecture with production deployment patterns
 
+---
+
 ## Shared Infrastructure
 
 ### Production Engineering
@@ -39,6 +50,8 @@ Production-ready data science platform demonstrating systematic approach to buil
 - **Model Training:** Automated experimentation with hyperparameter optimization
 - **Deployment Automation:** CI/CD pipelines with health monitoring and rollback capabilities
 - **Performance Monitoring:** Real-time metrics collection with alerting and drift detection
+
+---
 
 ## Technical Implementation
 
@@ -54,6 +67,8 @@ Production-ready data science platform demonstrating systematic approach to buil
 - **Error Handling:** Comprehensive logging and graceful failure recovery
 - **Security:** Authentication, rate limiting, and data protection throughout
 
+---
+
 ## Business Impact Framework
 
 ### Healthcare Intelligence Platform
@@ -67,6 +82,8 @@ Production-ready data science platform demonstrating systematic approach to buil
 - **Scalable Architecture:** Production patterns supporting enterprise deployment
 - **Quality Assurance:** Comprehensive testing and monitoring frameworks
 - **Documentation:** Technical specifications enabling team collaboration and extension
+
+---
 
 ## Repository Structure
 
@@ -87,6 +104,8 @@ data-science-platform/
 ├── fintech-risk-engine/               # Financial risk assessment system
 └── multimodal-lead-scoring/           # Advanced NLP lead intelligence
 ```
+
+---
 
 ## Getting Started
 
@@ -127,6 +146,7 @@ docker-compose up fraud-detection-api
 # Healthcare: http://localhost:8501
 # MLFlow: http://localhost:5001
 ```
+---
 
 ## Development Approach
 
@@ -141,6 +161,8 @@ docker-compose up fraud-detection-api
 - **Experiment Tracking:** MLFlow integration for all model development and comparison
 - **Documentation:** Architecture decisions and deployment guides for technical teams
 - **Testing:** Business domain validation alongside technical performance metrics
+
+---
 
 ## Performance Metrics
 
@@ -159,6 +181,8 @@ docker-compose up fraud-detection-api
 - **Scalability:** Tested with 10x data volume scenarios
 - **Monitoring:** Real-time performance tracking with automated alerting
 
+---
+
 ## Future Enhancements
 
 ### Immediate Roadmap (0-3 months)
@@ -176,6 +200,8 @@ docker-compose up fraud-detection-api
 - Enterprise integration patterns with major ERP and CRM systems
 - Advanced ensemble methods incorporating external data sources
 
+---
+
 ## Contributing
 
 This platform demonstrates systematic data science engineering with production deployment focus. Contributions emphasizing scalable architecture, business impact measurement, or cross-domain component reusability are welcome.
@@ -189,3 +215,10 @@ View the full portfolio, code, and demos:
 **Portfolio Site:** [mohitpammu.github.io/Projects](https://mohitpammu.github.io/Projects/)  
 **LinkedIn:** [linkedin.com/in/mohitpammu](https://linkedin.com/in/mohitpammu)  
 **Email:** mopammu@gmail.com
+
+---
+
+<p align="center">
+<strong>Building data science solutions that drive business impact</strong><br>
+© 2025 Mohit Pammu
+</p>
