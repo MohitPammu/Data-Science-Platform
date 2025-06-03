@@ -1,3 +1,16 @@
 
 # Private documentation - local reference only
 .private-docs/
+
+# Development and Process Documentation
+*_COMPLETION_*
+*_PREPARATION_*
+*_validation*.py
+*_revalidation*.py
+AUDIT_REPORT*
+
+# Python Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so

@@ -1,0 +1,70 @@
+services:
+  healthcare_dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: healthcare_streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5001
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+    networks:
+      - healthcare_network
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8501')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  mlflow:
+    image: python:3.9-slim
+    container_name: healthcare_mlflow
+    ports:
+      - "5001:5001"
+    environment:
+      - MLFLOW_BACKEND_STORE_URI=file:///mlruns
+    volumes:
+      - ./mlruns:/mlruns
+      - ./models:/models
+    working_dir: /app
+    networks:
+      - healthcare_network
+    command: >
+      sh -c "
+        pip install mlflow>=2.8.0 requests &&
+        mlflow server 
+          --host 0.0.0.0 
+          --port 5001 
+          --default-artifact-root /mlruns 
+          --serve-artifacts
+      "
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5001/api/2.0/mlflow/experiments/list')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  healthcare_network:
+    driver: bridge
+
+# Resource Management Configuration
+# Production-aware resource allocation and limits
+  
+# Note: Uncomment below for production deployment
+# deploy:
+#   resources:
+#     limits:
+#       cpus: '2.0'
+#       memory: 2G
+#     reservations:
+#       cpus: '0.5'
+#       memory: 512M

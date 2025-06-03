@@ -1,0 +1,91 @@
+{
+  "cross_component_analysis": {
+    "cluster_risk_correlation": {
+      "('composite_risk_score', 'mean')": {
+        "0": 39.81,
+        "1": 44.29
+      },
+      "('composite_risk_score', 'max')": {
+        "0": 99.8,
+        "1": 100.0
+      },
+      "('composite_risk_score', 'count')": {
+        "0": 517,
+        "1": 472
+      },
+      "('claims_total_amount', 'sum')": {
+        "0": 743382.49,
+        "1": 282519.0
+      }
+    },
+    "risk_forecast_projection": {
+      "current_high_risk_exposure": 106304.3,
+      "projected_30day_risk": 100004.1,
+      "risk_trend_alignment": "Increasing",
+      "investigation_priority_forecast": 110
+    },
+    "high_risk_provider_analysis": {
+      "count": 110,
+      "total_amount": 106304.3,
+      "top_specialties": {
+        "Internal Medicine": 32,
+        "Cardiology": 31,
+        "Orthopedics": 26
+      },
+      "cluster_distribution": {
+        "1": 59,
+        "0": 51
+      }
+    }
+  },
+  "integrated_recommendations": {
+    "immediate_actions": [
+      "Deploy enhanced monitoring for 110 high-risk providers identified through ensemble analysis",
+      "Prepare for +18.6% cost increase with expanded investigation capacity"
+    ],
+    "strategic_initiatives": [
+      "Implement real-time ensemble scoring for new provider enrollments",
+      "Develop predictive fraud prevention using integrated cluster-risk-forecast intelligence",
+      "Create automated alert system combining risk scores with forecast anomalies"
+    ],
+    "resource_allocation": {
+      "investigation_team_size": 5,
+      "monthly_investigation_budget": 1709.84,
+      "technology_investment": 6155.41,
+      "training_budget": 2051.8
+    },
+    "monitoring_framework": {
+      "risk_score_updates": "Weekly for high-risk providers, monthly for others",
+      "forecast_refresh": "Monthly with quarterly deep analysis",
+      "cluster_analysis": "Quarterly to identify migration patterns",
+      "platform_performance": "Real-time dashboard with weekly executive reports"
+    }
+  },
+  "platform_performance": {
+    "detection_coverage": {
+      "providers_analyzed": 989,
+      "clusters_identified": 2,
+      "high_risk_flagged": 110,
+      "forecast_accuracy_indicator": 18.6
+    },
+    "business_value_integration": {
+      "risk_based_savings": 15945.65,
+      "forecast_planning_value": 24334.33,
+      "investigation_optimization": 22000,
+      "total_platform_value": 62279.98
+    }
+  },
+  "strategic_intelligence": {
+    "primary_risk_indicators": [
+      "high_claim_amounts",
+      "cluster_concentration",
+      "forecast_increases"
+    ],
+    "monitoring_priorities": [
+      "real_time_risk_scoring",
+      "monthly_forecast_updates",
+      "cluster_migration_tracking"
+    ],
+    "scalability_assessment": "Platform ready for 10x provider volume expansion"
+  }
+}

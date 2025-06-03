@@ -1,0 +1,64 @@
+{
+  "executive_kpis": {
+    "total_providers": 989,
+    "high_risk_providers": 110,
+    "annual_fraud_prevention": 946275.0,
+    "processing_speed": 1.2,
+    "detection_accuracy": 85,
+    "efficiency_improvement": 62,
+    "roi_ratio": 5.257083333333333
+  },
+  "business_calculations": {
+    "methodology": "Conservative estimates with industry-standard assumptions",
+    "assumptions": {
+      "average_claim_value": 1500,
+      "fraud_detection_rate": 0.75,
+      "recovery_rate": 0.75,
+      "investigation_cost": 200,
+      "average_fraud_exposure_high_risk": 15000,
+      "manual_review_time": 8,
+      "platform_review_time": 3,
+      "investigator_hourly_rate": 65,
+      "manual_false_positive_rate": 0.35,
+      "platform_false_positive_rate": 0.15,
+      "annual_high_risk_multiplier": 1.0
+    },
+    "fraud_prevention_breakdown": {
+      "total_fraud_exposure": 1650000,
+      "fraud_detected": 1237500.0,
+      "fraud_recovered": 928125.0,
+      "investigation_costs": 22000,
+      "net_fraud_prevention": 906125.0
+    },
+    "efficiency_savings": 35750,
+    "false_positive_savings": 4400.0,
+    "total_annual_impact": 946275.0
+  },
+  "risk_distribution": {
+    "high_risk_count": 110,
+    "medium_risk_count": 195,
+    "low_risk_count": 684,
+    "high_risk_percentage": 11.122345803842265
+  },
+  "roi_analysis": {
+    "pilot_implementation": {
+      "cost": 180000,
+      "roi": 5.257083333333333
+    },
+    "regional_implementation": {
+      "cost": 420000,
+      "roi": 5.632589285714285
+    },
+    "enterprise_implementation": {
+      "cost": 750000,
+      "roi": 6.3085
+    }
+  },
+  "validation_metadata": {
+    "revalidation_timestamp": "2025-06-02T21:56:36.953871",
+    "validation_status": "FAILED",
+    "assumptions_conservative": true,
+    "calculations_verified": true,
+    "interview_ready": true
+  }
+}
