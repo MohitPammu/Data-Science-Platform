@@ -10,8 +10,8 @@
 Healthcare fraud detection platform combining **$50M DHCF project domain expertise** with professional data science implementation. Demonstrates systematic learning methodology and business-focused technical development.
 
 ### **Key Achievements:**
-- **$946,275 Annual Fraud Prevention** (validated conservative methodology)
-- **5.3:1 ROI** (exceeds 3:1 industry standard)
+- **$906,125 Annual Fraud Prevention** (validated conservative methodology)
+- **5.0:1 ROI** (exceeds 3:1 industry standard)
 - **989 Healthcare Providers Analyzed** with 11.1% high-risk identification
 - **3ms API Response Time** (production-ready performance)
 
